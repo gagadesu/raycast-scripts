@@ -1,0 +1,53 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "clean-mode",
+  "title": "Clean Mode",
+  "description": "Show a black cleaning overlay on every display and lock the keyboard",
+  "icon": "extension_icon.png",
+  "author": "gagadesu",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "System",
+    "Productivity"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "commands": [
+    {
+      "name": "clean-mode",
+      "title": "Clean Mode",
+      "subtitle": "Keyboard + Displays",
+      "description": "Cover every display with a black cleaning screen and lock the keyboard",
+      "mode": "no-view",
+      "keywords": [
+        "cleaning",
+        "keyboard",
+        "display",
+        "screen",
+        "overlay",
+        "lock"
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.24"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.2.0",
+    "@types/node": "^22.19.17",
+    "@types/react": "^19.2.18",
+    "eslint": "^9.39.5",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop --target x",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
