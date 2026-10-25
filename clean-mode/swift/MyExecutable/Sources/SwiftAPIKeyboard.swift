@@ -21,6 +21,8 @@ private final class CleaningOverlayWindow: NSWindow {
       defer: false,
       screen: screen
     )
+    // Swift ARC owns the window; close() must not release it again.
+    isReleasedWhenClosed = false
     level = .screenSaver
     collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary, .stationary, .ignoresCycle]
     isOpaque = true
