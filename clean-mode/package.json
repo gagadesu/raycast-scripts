@@ -46,7 +46,7 @@
   },
   "scripts": {
     "build": "ray build",
-    "dev": "ray develop --target x",
+    "dev": "ray develop --target release",
     "fix-lint": "ray lint --fix",
     "lint": "ray lint"
   }
